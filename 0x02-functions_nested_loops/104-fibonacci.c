@@ -1,20 +1,17 @@
 #include <stdio.h>
 
-
 /**
- * main _ The main function
+ * main - The main function
  * 1 and 2, seperated by a comma
  * Return: 0 (success)
  */
 
-
 int main(void)
-
 
 {
 	int count;
 	unsigned long fib1 = 0, fib2 = 1, sum;
-	unsigned long fib1_half1, fib2_half1, fib2_half2;
+	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
 	unsigned long half1, half2;
 
 
