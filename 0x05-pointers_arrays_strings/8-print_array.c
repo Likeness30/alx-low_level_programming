@@ -13,10 +13,8 @@ int b;
 for (b = 0; b < n; b++)
 {
 printf("%d", b[a]);
-{
 	if (b < n - 1)
 		printf(", ");
 }
 	printf("\n");
-}
 }
