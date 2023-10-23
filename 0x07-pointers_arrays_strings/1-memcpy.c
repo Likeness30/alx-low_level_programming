@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_memcpy - This  function copies n bytes from memory area src to memory area dest
+ *_memcpy - This  function copies n bytes from memory area src to memory area
  *@dest: 1st parameter
  *@src: 2nd parameter
  *@n: 3rd parameter
