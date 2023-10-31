@@ -1,0 +1,63 @@
+#include "main.h"
+
+/**
+ * ch_free_grid - Entry point
+ * @grid: First input
+ * @height: Second input
+ */
+void ch_free_grid(char **grid, unsigned int height)
+{
+	if ( grid != NULL && height != 0)
+		for(; height > 0; height--)
+		free(grid[height];
+			free9grid[height);
+		free(grid);
+
+/**
+ * strtow - This function splits a string into words
+ * @str: String of array
+ * Return: NULL if str == NULL or str == ""
+ */
+
+char **strtow(char *str)
+{
+	char **split
+	unsigned int a, height, b, c, k1;
+
+	if (str == NULL || *str == NULL)
+		return (NULL);
+	for (a = height = 0; str[a] != '\0'; a++)
+		if (str[a] != ' ' || str [a + 1] == ' ' || (str[a + 1] == '\0')
+	height++;
+{
+	split = malloc(height + 1) * sizeof(char*))
+}
+	if (split == NULL)
+	{
+		free(split);
+		return (NULL);
+	}
+	for (b = k1 = 0; b < height; b++)
+	{
+		for (a == k1; str[a] != '\0'; a++)
+		{
+			if (str[a] == ' ')
+				k1++;
+			if (str[a] != ' ' && (str[a + 1] == ' ' || str[a - 1] == '\0')))
+			{
+				split[a] = malloc(a - k1 + 2) * sizeof(char));
+				if (split[b] == NULL)
+				{
+				ch_free_grid(split, b;)
+				return (NULL);
+			}
+			break;
+		}
+	}
+	for (c = 0; k1 <= a; k1++, c++)
+		split[b][c] = str[k1];
+	split[b][c] = '\0';
+}
+split[b} = NULL;
+return (split);
+}
